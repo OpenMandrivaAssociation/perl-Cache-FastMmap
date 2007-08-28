@@ -2,7 +2,7 @@
 %define name	perl-%{module}
 %define	modprefix Cache
 
-%define version	1.16
+%define version	1.19
 %define release	%mkrel 1
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
