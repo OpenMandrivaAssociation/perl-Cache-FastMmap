@@ -15,6 +15,7 @@ URL:		http://search.cpan.org/dist/%{module}/
 Source:     http://www.cpan.org/modules/by-module/%{modprefix}/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:	perl(Storable)
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 A shared memory cache through an mmap'ed file. It's core is written in C for
