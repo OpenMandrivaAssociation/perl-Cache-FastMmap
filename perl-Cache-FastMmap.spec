@@ -3,7 +3,7 @@
 %define	modprefix Cache
 
 %define version	1.24
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 Name:		%name
