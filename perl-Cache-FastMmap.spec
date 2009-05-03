@@ -1,9 +1,10 @@
 %define module  Cache-FastMmap
 %define name	perl-%{module}
 %define	modprefix Cache
-
-%define version	1.28
+%define version	1.29
 %define release	%mkrel 1
+
+%define Werror_cflags %nil
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 Name:		%name
@@ -28,7 +29,7 @@ most used entries in the cache.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make} CFLAGS="%{optflags}"
+%{__make} OPTIMIZE="%{optflags}"
 
 %check
 %{__make} test
