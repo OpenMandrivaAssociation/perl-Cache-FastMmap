@@ -1,7 +1,7 @@
 %define module  Cache-FastMmap
 %define name	perl-%{module}
 %define	modprefix Cache
-%define version	1.29
+%define version	1.30
 %define release	%mkrel 1
 
 %define Werror_cflags %nil
