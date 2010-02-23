@@ -1,5 +1,5 @@
 %define upstream_name    Cache-FastMmap
-%define upstream_version 1.34
+%define upstream_version 1.35
 
 %define Werror_cflags %nil
 
@@ -11,10 +11,11 @@ Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/Cache/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/Cache/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl-devel
 BuildRequires:	perl(Storable)
+BuildRequires:	perl-devel
+
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
@@ -28,10 +29,10 @@ most used entries in the cache.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{optflags}"
+%make OPTIMIZE="%{optflags}"
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %buildroot
