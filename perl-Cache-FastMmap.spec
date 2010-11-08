@@ -1,11 +1,11 @@
 %define upstream_name    Cache-FastMmap
-%define upstream_version 1.35
+%define upstream_version 1.36
 
 %define Werror_cflags %nil
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
