@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:	3
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
