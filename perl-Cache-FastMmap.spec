@@ -1,17 +1,17 @@
 %define upstream_name    Cache-FastMmap
-%define upstream_version 1.36
+%define upstream_version 1.40
 
 %define Werror_cflags %nil
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %perl_convert_version 1.40
+Release:	1
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/Cache/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Cache/Cache-FastMmap-1.40.tar.gz
 
 BuildRequires:	perl(Storable)
 BuildRequires:	perl-devel
@@ -143,7 +143,7 @@ rm -rf %buildroot
 - Rebuild, spec file cleanup
 - import perl-Cache-FastMmap-1.09-3mdk
 
-* Sat May 06 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.09-3mdk
+* Sat May 06 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 1.09-3mdk
 - Fix BuildRequires: perl-devel is needed
 
 * Fri May 05 2006 Scott Karns <scottk@mandriva.org> 1.09-2mdk
@@ -152,4 +152,5 @@ rm -rf %buildroot
 
 * Thu Jan 12 2006 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 1.09-1mdk
 - Initial MDV RPM
+
 
