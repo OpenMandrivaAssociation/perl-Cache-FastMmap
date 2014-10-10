@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 1.40
-Release:	1
+Release:	2
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
