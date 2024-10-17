@@ -10,7 +10,7 @@ Release:	3
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}/
+URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/Cache/Cache-FastMmap-1.40.tar.gz
 
 BuildRequires:	perl(Storable)
