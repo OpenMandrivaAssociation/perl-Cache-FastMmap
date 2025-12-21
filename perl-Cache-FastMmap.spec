@@ -13,6 +13,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/Cache/Cache-FastMmap-1.40.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(Storable)
 BuildRequires:	perl-devel
 
