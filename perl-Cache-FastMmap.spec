@@ -1,17 +1,17 @@
 %define upstream_name    Cache-FastMmap
-%define upstream_version 1.40
+%define upstream_version 1.62
 
 %define Werror_cflags %nil
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.40
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/Cache/Cache-FastMmap-1.40.tar.gz
+URL:		https://github.com/robmueller/cache-fastmmap
+Source0:    https://cpan.metacpan.org/authors/id/R/RO/ROBM/Cache-FastMmap-1.62.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Storable)
