@@ -1,11 +1,9 @@
 %define upstream_name    Cache-FastMmap
-%define upstream_version 1.62
-
 %define Werror_cflags %nil
 
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.62
+Release:	2
 
 Summary:	Uses an mmap'ed file to act as a shared memory interprocess cache
 License:	Artistic/GPL
@@ -26,7 +24,7 @@ access the cache at the same time. It uses a basic LRU algorithm to keep the
 most used entries in the cache.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -73,9 +71,7 @@ rm -rf %buildroot
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 1.340.0-1mdv2010.0
 + Revision: 406256
-- rebuild using %%perl_convert_version
-
-* Sun Jun 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.34-1mdv2010.0
+- rebuild using %1.62 Sun Jun 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.34-1mdv2010.0
 + Revision: 387752
 - update to new version 1.34
 
